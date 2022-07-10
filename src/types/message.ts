@@ -1,5 +1,5 @@
 export interface Message {
-  id: number
+  id?: number
   conversationId: number
   authorId: number
   timestamp: number

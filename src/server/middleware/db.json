@@ -23,17 +23,17 @@
     },
     {
       "id": 4,
-      "recipientId": 1,
-      "recipientNickname": "Thibault",
-      "senderId": 3,
-      "senderNickname": "Patrick"
+      "recipientId": 5,
+      "recipientNickname": "Mansour",
+      "senderId": 1,
+      "senderNickname": "Thibaut"
     },
     {
       "id": 5,
-      "recipientId": 4,
-      "recipientNickname": "Elodie",
-      "senderId": 1,
-      "senderNickname": "Thibault"
+      "recipientId": 1,
+      "recipientNickname": "Thibault",
+      "senderId": 5,
+      "senderNickname": "Mansour"
     }
   ],
   "messages": [
@@ -81,30 +81,16 @@
     },
     {
       "id": 7,
-      "conversationId": 3,
-      "timestamp": 1620294767,
-      "authorId": 1,
-      "body": "Bonjour c'est le premier message de la troisieme conversation"
-    },
-    {
-      "id": 8,
       "conversationId": 4,
       "timestamp": 1621304666,
-      "authorId": 3,
+      "authorId": 1,
       "body": "Bonjour c'est le premier message de la quatrieme conversation"
     },
     {
-      "id": 9,
-      "conversationId": 4,
-      "timestamp": 1621304699,
-      "authorId": 1,
-      "body": "Bonjour c'est le deuxieme message de la quatrieme conversation"
-    },
-    {
-      "id": 10,
+      "id": 8,
       "conversationId": 5,
       "timestamp": 1621304666,
-      "authorId": 4,
+      "authorId": 5,
       "body": "Bonjour c'est le premier message de la cinquieme conversation"
     }
   ],
@@ -135,7 +121,7 @@
     },
     {
       "id": 5,
-      "nickname": "You",
+      "nickname": "Mansour",
       "token": "xxxx",
       "avatar": "garcon.webp"
     }

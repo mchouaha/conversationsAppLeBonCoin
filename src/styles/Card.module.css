@@ -1,0 +1,79 @@
+
+
+.list-conversations {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f2ed;
+}
+
+.list-messages {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: flex-end;
+    width: stretch;
+    background-color: #f5f2ed;
+    overflow-y: scroll;
+    height: 500px;
+}
+
+@media (max-width: 375px) {
+    .list-messages {
+        height: 90vh;
+    }
+  }
+
+.card {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+    border-radius: 20px;
+    margin: 0.5em 1em;
+    cursor: pointer;
+
+}
+
+.logo-container {
+    border: 1px solid rgba(242, 241, 241, 0.3);
+    width: 60px;
+    height: stretch;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    font-family: monospace;
+    margin-left: 1em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+.date {
+    display: flex;
+    align-self: flex-end;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: 0.8em;
+    margin: 0.5em;
+}
+
+.input-container {
+    display: flex;
+    margin: 0.5em;
+    justify-content: space-between;
+}

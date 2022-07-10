@@ -7,13 +7,20 @@
   align-items: center;
 }
 
-.main {
-  padding: 4rem 1rem;
-  flex: 1;
+.logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1em 0 2em 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+    border: 1px solid;
 }
 
 .title {
@@ -66,7 +73,6 @@
 
 .card {
   margin: .5rem;
-  flex-basis: 45%;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
@@ -101,11 +107,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 375px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) { 
+  .main {
+    width: fit-content;
+  }
+
+  .footer {
+    margin-top: 0em;
   }
 }

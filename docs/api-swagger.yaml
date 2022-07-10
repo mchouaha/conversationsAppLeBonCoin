@@ -15,6 +15,63 @@ tags:
 schemes:
   - http
 paths:
+  "/conversations/":
+    get:
+      tags:
+        - conversations
+      summary: Get all conversations for all user
+      description: ""
+      operationId: getConversationsByUserId
+      produces:
+        - application/json
+      responses:
+        "200":
+          description: Success
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/Conversation"
+        "404":
+          description: No conversations found
+        "503":
+          description: Unavailable
+    post:
+      tags:
+        - conversations
+      summary: Create a new Conversation
+      description: ""
+      operationId: addConversation
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: userId
+          in: path
+          description: ID of the user
+          required: true
+          type: string
+        - in: body
+          name: body
+          description: Conversation object to create
+          required: true
+          schema:
+            type: object
+            properties:
+              recipientId:
+                type: integer
+      responses:
+        "200":
+          description: Success
+          schema:
+            type: object
+            properties:
+              id:
+                type: integer
+        "400":
+          description: Invalid input
+        "503":
+          description: Unavailable
   "/conversations/{userId}":
     get:
       tags:
@@ -190,7 +247,7 @@ paths:
         - users
       summary: get all users
       description: ""
-      operationId: getUsers
+      operationId: GET_USERS
       produces:
         - application/json
       responses:
