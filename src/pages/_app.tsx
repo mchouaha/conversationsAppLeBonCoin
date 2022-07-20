@@ -17,15 +17,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   
   const ContextProvider: FunctionComponent<ContextProviderProps> = ({ children }) => {
 
-    const [error, serError] = useState<string>('')
-
     return (
         <Fragment>
-          <interceptError.Provider value={{error, serError}}>
             <ApolloProvider client={apolloClient}>
               {children}
             </ApolloProvider>
-          </interceptError.Provider>
         </Fragment>
     )
   }
