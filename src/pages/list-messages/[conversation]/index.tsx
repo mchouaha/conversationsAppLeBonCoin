@@ -21,7 +21,7 @@ import styles from '../../../styles/Card.module.css'
 import { loggedUserId } from '../../_app'
 
 
-type MessagesProps = {
+interface MessagesProps {
     conversation: Conversation
 }
 

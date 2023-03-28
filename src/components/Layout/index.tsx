@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Logo from '../../assets/lbc-logo.webp'
 import styles from '../../styles/Home.module.css'
 
-type Props = {
+interface Props {
     children?: ReactNode
     title?: string
   }

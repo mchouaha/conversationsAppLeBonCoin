@@ -11,7 +11,7 @@ import { GET_USERS } from '../../../api/graphql/queries'
 import { useQuery } from '@apollo/client'
 
 
-type cardProps = {
+interface cardProps {
     message: Message
     isRecipient: boolean
 }

@@ -6,7 +6,7 @@ import SendIcon from '@mui/icons-material/Send'
 import Stack from '@mui/material/Stack'
 
 
-type ButtonsProps = {
+interface ButtonsProps {
   onClick: Function
 }
 

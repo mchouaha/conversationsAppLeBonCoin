@@ -1,4 +1,4 @@
-import type { FC } from 'react'
+import { FC } from 'react'
 import { useRouter } from 'next/router'
 
 import styles from '../styles/Home.module.css'

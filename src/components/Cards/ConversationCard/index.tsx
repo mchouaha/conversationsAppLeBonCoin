@@ -13,7 +13,7 @@ import styles from '../../../styles/Card.module.css'
 import { format } from 'date-fns'
 
 
-type cardProps = {
+interface cardProps {
     conversation: Conversation
 }
 

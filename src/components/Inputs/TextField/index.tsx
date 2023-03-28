@@ -4,7 +4,7 @@ import { ChangeEvent, FC, useState } from 'react'
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 
-type TextFieldProps = {
+interface TextFieldProps {
   onChange: Function
   value?: string
 }

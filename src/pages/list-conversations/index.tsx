@@ -10,7 +10,7 @@ import Layout from '../../components/Layout'
 
 import styles from '../../styles/Card.module.css'
 
-type ConversationsProps = {
+interface ConversationsProps {
   conversations: Conversation[]
 }
 

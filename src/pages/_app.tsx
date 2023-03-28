@@ -1,13 +1,12 @@
-import type { AppProps } from 'next/app'
+import { AppProps } from 'next/app'
 
 import { ApolloProvider } from '@apollo/client'
 import { apolloClient } from '../api/apolloClient'
 
 import '../styles/globals.css'
 import { FunctionComponent, useState, Fragment } from 'react'
-import { interceptError } from '../contexts'
 
-type ContextProviderProps = {
+interface ContextProviderProps {
   children: React.ReactNode; // 👈️ type children
 };
 
